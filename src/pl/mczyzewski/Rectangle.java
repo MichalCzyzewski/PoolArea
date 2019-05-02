@@ -4,7 +4,7 @@ public class Rectangle
 {
 
     private double width;
-    private double heigth;
+    private double length;
 
     public Rectangle(double width, double heigth)
     {
@@ -16,9 +16,9 @@ public class Rectangle
 
         if (heigth < 0)
         {
-            this.heigth = 0;
+            this.length = 0;
         }
-        this.heigth = heigth;
+        this.length = heigth;
     }
 
     public double getWidth()
@@ -26,13 +26,13 @@ public class Rectangle
         return this.width;
     }
 
-    public double getHeigth()
+    public double getLenght()
     {
-        return heigth;
+        return length;
     }
 
     public double getArea()
     {
-        return this.heigth * this.width;
+        return this.length * this.width;
     }
 }
