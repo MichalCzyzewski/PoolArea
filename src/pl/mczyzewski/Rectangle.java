@@ -20,4 +20,19 @@ public class Rectangle
         }
         this.heigth = heigth;
     }
+
+    public double getWidth()
+    {
+        return this.width;
+    }
+
+    public double getHeigth()
+    {
+        return heigth;
+    }
+
+    public double getArea()
+    {
+        return this.heigth * this.width;
+    }
 }
