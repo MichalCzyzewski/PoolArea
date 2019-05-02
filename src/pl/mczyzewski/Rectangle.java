@@ -8,17 +8,9 @@ public class Rectangle
 
     public Rectangle(double width, double length)
     {
-        if(width<0 )
-        {
-            this.width = 0;
-        }
-        this.width = width;
+        this.width = (width < 0 ? 0 : width);
 
-        if (length < 0)
-        {
-            this.length = 0;
-        }
-        this.length = length;
+        this.length = (length < 0 ? 0 : length);
     }
 
     public double getWidth()
@@ -33,6 +25,6 @@ public class Rectangle
 
     public double getArea()
     {
-        return this.length  * this.width;
+        return this.length * this.width;
     }
 }

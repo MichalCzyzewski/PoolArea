@@ -7,14 +7,10 @@ public class Cuboid extends Rectangle
     public Cuboid(double width, double length, double height)
     {
         super(width, length);
-        if (height < 0)
-        {
-            this.height = 0;
-        } else
-        {
-            this.height = height;
-        }
+        this.height = (height < 0 ? 0 : height);
     }
+
+\
 
     public double getHeight()
     {
@@ -23,7 +19,7 @@ public class Cuboid extends Rectangle
 
     public double getVolume()
     {
-        return getHeight()*getArea();
+        return getHeight() * getArea();
     }
 
 
